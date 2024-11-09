@@ -24,4 +24,18 @@ public class Arrays {
             System.out.print(arr[k] + " "); 
         }
     }
+
+    public static void reversePart(int[] arr, int l, int r){
+        int N = arr.length;
+        int i = l;
+        int j = r;
+
+        while(i < j) {
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+            i++;
+            j--;
+        }
+    }
 }
